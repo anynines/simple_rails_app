@@ -1,1 +1,1 @@
-rvm use 2.0.0-p0@simple-cf-v2-deploy --create
+rvm use jruby-1.7.3@simple-cf-v2-deploy --create
