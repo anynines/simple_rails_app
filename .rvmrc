@@ -1,1 +1,1 @@
-rvm use 1.9.3@simple-cf-v2-deploy --create
+rvm use 2.0.0-p0@simple-cf-v2-deploy --create
