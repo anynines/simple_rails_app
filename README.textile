@@ -1,0 +1,12 @@
+h1. Simple Rails Application
+
+This is a simple application ready to be deployed on anynines.com. It can create, delete and display posts. It is just a proof of concept and serves to demonstrate the deployment process on the anynines platform as a service.
+
+h2. Dependencies
+
+* MySQL Server
+
+h2. Deployment
+
+Please refer to our deployment tutorial at https://support.anynines.com/entries/24083808-How-to-deploy-your-apps-on-anynines for a detailed deployment process description.
+
