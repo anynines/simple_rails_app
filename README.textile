@@ -1,0 +1,17 @@
+h1. Simple Rails Application
+
+This is a simple application ready to be deployed on anynines.com. It can create, delete and display posts. It is just a proof of concept and serves to demonstrate the deployment process on the anynines platform as a service.
+
+h2. Dependencies
+
+* MySQL Server
+
+h2. Deployment
+
+Please refer to our deployment tutorial at https://support.anynines.com/entries/24083808-How-to-deploy-your-apps-on-anynines for a detailed deployment process description.
+
+h2. Branches
+
+* master : This branch uses ruby mri 1.9.3 and rails 3.2.13
+* ruby200 : This branch uses ruby mri 2.0.0 and rails 3.2.13
+* jruby : This branch uses jruby 1.7.4 with ruby version 1.9.3 and rails 3.2.13
