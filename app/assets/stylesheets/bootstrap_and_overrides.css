@@ -22,3 +22,15 @@
 .text_field_content {
 	width: 20%;
 }
+
+.basic_heading {
+	margin-bottom: 20px;
+}
+
+.content_column {
+	width: 40%;
+}
+
+body {
+	background-color: black;
+}

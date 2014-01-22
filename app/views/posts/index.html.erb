@@ -1,4 +1,4 @@
-<h1>Listing posts</h1>
+<h1 class="basic_heading">Listing posts</h1>
 
 <p><%= link_to 'New Post', new_post_path, class: "btn btn-success" %></p>
 
@@ -6,10 +6,8 @@
   <tr>
     <th>Name</th>
     <th>Title</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th class="content_column">Content</th>
+    <th>Actions</th>
   </tr>
 
 <% @posts.each do |post| %>
@@ -17,9 +15,9 @@
     <td><%= post.name %></td>
     <td><%= post.title %></td>
     <td><%= post.content %></td>
-    <td><%= link_to 'Show', post, class: "btn" %></td>
-    <td><%= link_to 'Edit', edit_post_path(post), class: "btn" %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+    <td><%= link_to 'Show', post, class: "btn" %>
+    <%= link_to 'Edit', edit_post_path(post), class: "btn" %>
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>
