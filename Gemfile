@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 ruby '1.9.3'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -25,6 +25,10 @@ end
 
 group :development do
   gem 'rspec-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 gem 'jquery-rails'
