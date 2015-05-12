@@ -1,0 +1,13 @@
+---
+applications:
+- name: simple_rails
+  memory: 350M
+  instances: 1
+  buildpack: 'https://github.com/cloudfoundry/ruby-buildpack.git#v1.4.1'
+  domain: de.a9sapp.eu
+  path: .
+  services:
+  - my_first_mysql
+  env:
+    STACK: cedar
+    RAILS_ENV: production
