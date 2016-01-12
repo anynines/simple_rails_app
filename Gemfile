@@ -25,6 +25,7 @@ end
 
 group :development do
   gem 'rspec-rails'
+  gem 'test-unit'
 end
 
 group :production do
