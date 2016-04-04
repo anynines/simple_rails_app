@@ -7,7 +7,6 @@ gem 'rails', '3.2.20'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '0.3.20'
-gem 'activerecord-mysql2-adapter'
 
 gem 'twitter-bootstrap-rails'
 
