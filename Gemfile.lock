@@ -65,7 +65,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.11.2)
-    mysql2 (0.4.3)
+    mysql2 (0.3.20)
     polyglot (0.3.5)
     power_assert (0.2.7)
     rack (1.4.7)
@@ -157,7 +157,7 @@ DEPENDENCIES
   activerecord-mysql2-adapter
   coffee-rails (~> 3.2.1)
   jquery-rails
-  mysql2
+  mysql2 (= 0.3.20)
   rails (= 3.2.20)
   rails_12factor
   rspec-rails
