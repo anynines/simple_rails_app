@@ -1,13 +1,20 @@
 ---
 applications:
 - name: simple_rails
-  memory: 350M
-  instances: 1
-  buildpack: 'https://github.com/cloudfoundry/ruby-buildpack.git#v1.4.1'
-  domain: de.a9sapp.eu
-  path: .
+  memory: 200M
+  instances: 1 # the number of instances to start
+  buildpack: 'https://github.com/cloudfoundry/ruby-buildpack.git#v1.4.1' # The buildpack to use
+  domain: de.a9sapp.eu # The base domain for the application
+  # host: simple_rails_123 # TODO: adjust to desired host
+
+  path: . # The app's filepath to upload to CF
+
+  # A list of services to bind to the app instances
   services:
-  - my_first_mysql
+  - my_first_mysql # TODO: adjust to a mysql instance name
+
+  # A list of key value pairs to initialize environment variables
+  # for the apps runtime environment
   env:
     STACK: cedar
     RAILS_ENV: production
