@@ -1,0 +1,11 @@
+---
+applications:
+- name: your_app_name
+  memory: 256M
+  instances: 1
+  host: your_app_name
+  path: .
+  services:
+  - my_first_postgresql
+  env:
+    RAILS_ENV: production

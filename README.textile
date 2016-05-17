@@ -4,13 +4,11 @@ This is a simple application ready to be deployed on anynines.com. It can create
 
 h2. Dependencies
 
-* MySQL Server
+* Postgresql Server
 
 h2. Branches
 
 * master : This branch uses ruby mri 2.2.2 and rails 3.2.20
-* ruby200 : This branch uses ruby mri 2.0.0 and rails 3.2.13
-* jruby : This branch uses jruby 1.7.4 with ruby version 1.9.3 and rails 3.2.13
 
 h2. Deployment
 
@@ -28,8 +26,8 @@ bc. cp manifest.yml.v6 manifest.yml
 vim manifest.yml # replace all occurences of your_app_name with your desired app name
 
 bc.
-# Create a mysql service instance with the free plan
-cf create-service mysql Pluto-free mysql-your_app_name # replace your_app_name in this command
+# Create a postgresql service instance with the free plan
+cf create-service a9hcp-postgresql postgresql-single-small <postgres_service_name> # make sure that the name you use for the instance matches the one in the manifest
 
 bc.
 cf push # this will deploy the application instance
@@ -38,4 +36,4 @@ bc.
 # List your running applications including urls
 cf apps
 
-Visit your application url http://your_app_name.de.a9sapp.eu .
+Visit your application url http://your_app_name.aws.ie.a9sapp.eu .

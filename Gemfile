@@ -1,12 +1,12 @@
 source 'http://rubygems.org'
-ruby '2.2.2'
+ruby '2.3.0'
 
 gem 'rails', '3.2.20'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.3.20'
+gem 'pg'
 
 gem 'twitter-bootstrap-rails'
 

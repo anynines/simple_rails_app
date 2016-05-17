@@ -63,7 +63,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.11.2)
-    mysql2 (0.3.20)
+    pg (0.18.4)
     polyglot (0.3.5)
     power_assert (0.2.7)
     rack (1.4.7)
@@ -154,7 +154,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  mysql2 (= 0.3.20)
+  pg
   rails (= 3.2.20)
   rails_12factor
   rspec-rails
@@ -165,5 +165,8 @@ DEPENDENCIES
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
 
+RUBY VERSION
+   ruby 2.2.2p95
+
 BUNDLED WITH
-   1.11.2
+   1.12.4
