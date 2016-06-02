@@ -3,7 +3,6 @@ applications:
 - name: simple_rails
   memory: 200M
   instances: 1 # the number of instances to start
-  buildpack: 'https://github.com/cloudfoundry/ruby-buildpack.git#v1.4.1' # The buildpack to use
   # host: simple_rails_123 # TODO: adjust to desired host
 
   path: . # The app's filepath to upload to CF

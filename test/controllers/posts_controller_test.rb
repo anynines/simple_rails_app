@@ -35,7 +35,7 @@ class PostsControllerTest < ActionController::TestCase
   end
 
   test "should update post" do
-    put :update, id: @post, post: { content: @post.content, name: @post.name, title: @post.title }
+    patch :update, id: @post, post: { content: @post.content, name: @post.name, title: @post.title }
     assert_redirected_to post_path(assigns(:post))
   end
 
