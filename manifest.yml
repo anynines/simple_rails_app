@@ -9,7 +9,7 @@ applications:
   path: . # The app's filepath to upload to CF
 
   # A list of services to bind to the app instances
-  services:
+  #services:
   #- psql-sz # TODO: adjust to a mysql instance name
   #- syslog-endpoint
 
