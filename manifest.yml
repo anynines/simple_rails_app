@@ -1,11 +1,19 @@
 ---
 applications:
-- name: your_app_name
-  memory: 256M
-  instances: 1
-  host: your_app_name
-  path: .
+#- name: simple_rails
+- memory: 200M
+  instances: 1 # the number of instances to start
+  buildpack: https://github.com/cloudfoundry/ruby-buildpack
+  #host: simple-rails-sz # TODO: adjust to desired host
+
+  path: . # The app's filepath to upload to CF
+
+  # A list of services to bind to the app instances
   services:
-  - my_first_postgresql
+  #- psql-sz # TODO: adjust to a mysql instance name
+  #- syslog-endpoint
+
+  # A list of key value pairs to initialize environment variables
+  # for the apps runtime environment
   env:
     RAILS_ENV: production
